@@ -1,0 +1,38 @@
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.rating {
+    position: relative;
+    width: 430px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3em;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 2px #b3acac;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.rating__star {
+    font-size: 3.3em;
+    cursor: pointer;
+    color: #ffee00f5;
+    transition: filter linear .3s;
+}
+
+.rating__star:hover {
+    filter: drop-shadow(1px 1px 4px yellow);
+}
+
+.rating .rating__star:hover,
+.rating .rating__star:hover~.rating__star {
+    color: rgb(216, 219, 28);
+}
